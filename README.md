@@ -1,39 +1,39 @@
 # GeoSim2D Platform
 
-Private, release-only distribution of GeoSim2D Platform for Windows x64.
+Portable 2D CAE platform for Windows x64.
 
-## Download and run
+## Download
 
-Open [Releases](https://github.com/Zxw-tech-zz/GeoSim2D-Platform/releases), select a version, and download `GeoSim2D.exe`.
-Run the executable directly. No separate Python, Conda, Product package, or bundled Solver installation is required.
-Access requires a GitHub account with permission to this private repository.
+### [Download GeoSim2D.exe](https://github.com/Zxw-tech-zz/GeoSim2D-Platform/releases/download/v2026.09.13-private.1/GeoSim2D.exe)
 
-## Included components
+**2026.09.13 Private Preview · Windows x64 · 997 MiB**
+
+Sign in with a GitHub account authorized to access this private repository, download the single executable, and run it directly. No separate Python, Conda, Product package, or bundled Solver installation is required.
+
+## Included
 
 - Mesh Studio
-- FEM
-- MPM
-- UBLA
-- The Solver executables identified in each release's notes
+- FEM with GeoSimFEM
+- MPM with TaichiMpmSolver
+- UBLA with GeoSim_PDIP_UBLA
 
-## Requirements and limitations
+## Before running
 
-- Windows x64 and a writable temporary directory with sufficient free disk space.
-- A onefile build extracts its dependencies at startup. The first launch may take time.
-- GPU operations require compatible hardware and drivers; this download does not install drivers.
-- These are unsigned private evaluation builds unless the release notes explicitly state otherwise.
-- Check each release's validation results and known limitations before using it.
+- Allow ample free disk space: startup extracts approximately 1.69 GiB, with additional temporary files used by the bundled Solvers.
+- The first launch may take time. The executable is unsigned, so Windows security software may display a warning.
+- GPU operations require compatible hardware and drivers.
+- This is a private evaluation build. Clean-Windows VM qualification and full interactive GUI testing have not been completed.
+- The UBLA rigid rectangle verification currently reports non-convergence. The elastoplastic rectangle verification passed.
+- Ordinary PyInstaller packaging does not prevent extraction or reverse engineering. Private access restricts downloads; it does not encrypt the executable.
 
-## Code protection
+## File verification
 
-The current private build uses ordinary PyInstaller Onefile, without PyArmor protection.
-Python code inside the executable may be extracted or reverse engineered. Repository privacy is access control, not binary encryption.
-Third-party libraries and supplied Solver executables are packaged without changes to their internal implementations.
+SHA-256 for the executable:
 
-## Repository contents
+```text
+f57a2bc59ad83f15d9d75d5f2ed27ce5257d7c005522bcf5ae809ecb789aecfe
+```
 
-This repository contains English distribution information only. Application executables are Release assets, not Git-tracked files.
-The implementation source tree, its Git history, build directories, credentials, and user projects are not uploaded here.
-GitHub's automatically generated repository archives contain these documentation files, not the application source repository.
+This repository is for application downloads and English usage information only. The application implementation and its development history are not hosted here.
 
-Third-party components retain their respective licenses and notices. Private access and onefile packaging do not override those terms.
+Third-party components retain their respective licenses and notices.
