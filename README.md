@@ -15,6 +15,10 @@ The portable Windows x64 application is packaged as a single executable. It incl
 
 The application extracts runtime dependencies to a temporary directory when it starts. A writable temporary directory and sufficient free disk space are required. GPU features require compatible hardware and drivers.
 
+## Versions
+
+Open the repository's Releases tab to browse available versions. Each release contains one Windows executable named `GeoSim2D_V<version>.exe`. New versions are added while existing versions remain available.
+
 ## Evaluation status
 
 This software is provided for evaluation. Validation results, version information, and known limitations are documented in the release notes. Unsigned builds may trigger Windows security warnings. Packaging does not provide a guarantee against reverse engineering.
