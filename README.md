@@ -17,7 +17,7 @@ The application extracts runtime dependencies to a temporary directory when it s
 
 ## Versions
 
-Open the repository's Releases tab to browse available versions. Each release contains one Windows executable named `GeoSim2D_V<version>.exe`. New versions are added while existing versions remain available.
+Open the repository's Releases tab to browse available versions. Each release contains one Windows executable named `GeoSim2D_V<version>.exe`. The latest version and up to ten previous executable versions are retained.
 
 ## Evaluation status
 
